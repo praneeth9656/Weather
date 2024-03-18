@@ -4,7 +4,7 @@ WORKDIR /weatherapp
 
 COPY package.json .
 
-COPY package-locj.json .
+COPY package-lock.json .
 
 RUN npm install
 
