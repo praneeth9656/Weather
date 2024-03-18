@@ -1,6 +1,13 @@
 # Docker
+- task: Docker@2
+  inputs:
+    containerRegistry: 'AzContainerRegistry'
+    repository: 'Weather App'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
 
 trigger:
 - main
