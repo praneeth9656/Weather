@@ -2,7 +2,7 @@ FROM node:20-alpine
 
 WORKDIR /weatherapp
 
-COPY package*.json .
+COPY package.json .
 
 RUN npm install
 
