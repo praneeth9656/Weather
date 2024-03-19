@@ -2,6 +2,8 @@ FROM node:20-alpine
 
 WORKDIR /weatherapp
 
+CMD ["node", "server.js"]
+
 COPY package.json .
 
 COPY package-lock.json .
